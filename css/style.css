@@ -11,12 +11,22 @@ a:hover, a:active { outline: 0; }
 
 .center { margin: 0 auto; text-align: center; }
 
-#main { height: 100%; }
+.round {
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.hide { display: none; }
+
+#main { height: 100%; overflow: none; }
+#connect { padding-top: 10px; }
 #name { width: 425px; text-align: center; position: relative; font-size: 60px; }
 #name span { padding: 0 0 10px 0; border-bottom: 1px solid #2cab2c; }
 #links { width: 425px; text-align: center; position: relative; top: 35px; }
 #links a { padding: 0 10px 0 10px; }
-#content { position: relative; top: 30%; }
+#content { position: relative; top: 20%; }
+#details { background: #c1ecb9; font-size: 0.8em; width: 500px; position: relative; top: 50px; border: 1px solid #2cab2c; }
 
 /* Hide from both screenreaders and browsers: h5bp.com/u */
 .hidden { display: none !important; visibility: hidden; }

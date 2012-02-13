@@ -40,10 +40,23 @@
         <div id="content">
         <div id="name" class="center"><span>Josh McCarthy</span></div>
         <div id="links" class="center">
-            <a href="http://flavors.me/mccarthyjm">About</a>
-            <a href="http://twitter.com/mccarthyjm">Twitter</a>
-            <a href="http://github.com/joshuam">GitHub</a>
+            <a id="navAbout" href="#">About</a>
+            <a id="navCode" href="#">Code</a>
+            <a id="navConnect" href="#">Connect</a>
         </div>
+        <div id="details" class="center round">
+            <div id="about" class="nav">
+                <p>I'm a software developer in St. John's, NL.<br />
+                I love the web and have a passion for learning.<br />
+                Check out my code on github and connect with me.</p>
+            </div>
+            <div id="code" class="nav hide"><a href="http://github.com/joshuam">joshuam</a></div>
+            <div id="connect" class="nav hide">
+                <!-- Icons from www.glyphicons.com -->
+                <a href="https://twitter.com/mccarthyjm"><img src="img/twitter_icon.png" /></a>
+                <a href="http://ca.linkedin.com/pub/josh-mccarthy/39/558/80a"><img src="img/linkedin_icon.png" /></a>
+                <a href="mailto:mccarthy.josh@gmail.com"><img src="img/email_icon.png" /></a>
+            </div>
         </div>
     </div>
     
@@ -51,13 +64,9 @@
   <!-- JavaScript at the bottom for fast page loading -->
 
   <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline -->
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
   <script>window.jQuery || document.write('<script src="js/libs/jquery-1.6.2.min.js"><\/script>')</script>
-
-
-  <!-- scripts concatenated and minified via ant build script-->
-  <script defer src="js/plugins.js"></script>
-  <script defer src="js/script.js"></script>
+  <script type="text/javascript" src="js/script.js"></script>
   <!-- end scripts-->
 
   <!--[if lt IE 7 ]>
