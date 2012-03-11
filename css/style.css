@@ -21,7 +21,7 @@ a:hover, a:active { outline: 0; }
 
 #main { height: 100%; overflow: none; }
 #connect { padding-top: 10px; }
-#name { width: 425px; text-align: center; position: relative; font-size: 60px; }
+#name { width: 425px; text-align: center; position: relative; font-size: 60px; font-weight: 400; }
 #name span { padding: 0 0 10px 0; border-bottom: 1px solid #2cab2c; }
 #links { width: 425px; text-align: center; position: relative; top: 35px; }
 #links a { padding: 0 10px 0 10px; }
