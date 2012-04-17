@@ -3,7 +3,7 @@ $(document).ready(function(){
     var canvas = document.getElementById('canvas'),
     ctx = canvas.getContext('2d');
     ctx.fillStyle = 'rgba(38,91,243, 1.0)';
-    ctx.font='80px Ubuntu Mono';
+    ctx.font='80px Ubuntu Mono, monospace';
 
     function hide()
     {
