@@ -1,23 +1,17 @@
-html { font-size: 100%; overflow-y: scroll; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
-
-body { margin: 0; font-size: 20px; line-height: 1.6em; }
-
-body, button, input, select, textarea { font-family: 'Droid Serif', 'Myriad Pro', 'Georgia', sans-serif; color: #000; }
-a { color: #000; text-decoration: none; }
-a:visited { color: #000; }
-a:hover { color: #2cab2c; text-decoration: none; }
+html { font-size: 100%; overflow-y: scroll; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; text-shadow: 2px 2px black; }
+body { margin: 0; font-size: 20px; line-height: 1.6em; background-color: rgb(26,26,24); }
+body, button, input, select, textarea { font-family: 'Ubuntu Mono', sans-serif; color: rgb(241,243,217); }
+a { color: rgb(241,243,217); text-decoration: none; }
+a:visited { color: rgb(241,243,217); }
+a:hover { color: rgb(249,49,62); text-decoration: none; }
 a:focus { outline: thin dotted; }
 a:hover, a:active { outline: 0; }
-
+canvas:hover { cursor: pointer; }
 .center { margin: 0 auto; text-align: center; }
-
-.round {
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    border-radius: 5px;
-}
-
+.round { -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; }
 .hide { display: none; }
+.hilight { color: rgb(243,228,16); }
+.selected { color: rgb(249,49,62); }
 
 #main { height: 100%; overflow: none; }
 #connect { padding-top: 10px; }
@@ -26,7 +20,7 @@ a:hover, a:active { outline: 0; }
 #links { width: 425px; text-align: center; position: relative; top: 35px; }
 #links a { padding: 0 10px 0 10px; }
 #content { position: relative; top: 20%; }
-#details { background: #c1ecb9; font-size: 0.8em; width: 500px; position: relative; top: 50px; border: 1px solid #2cab2c; }
+#details { font-size: 0.8em; width: 500px; position: relative; top: 50px; }
 
 /* Hide from both screenreaders and browsers: h5bp.com/u */
 .hidden { display: none !important; visibility: hidden; }
