@@ -1,5 +1,5 @@
 html { font-size: 100%; overflow-y: scroll; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; text-shadow: 2px 2px black; }
-body { margin: 0; font-size: 20px; line-height: 1.6em; background-color: rgb(26,26,24); }
+body { margin: 0; font-size: 1.5em; line-height: 1.6em; background-color: rgb(26,26,24); }
 body, button, input, select, textarea { font-family: 'Ubuntu Mono', sans-serif; color: rgb(241,243,217); }
 a { color: rgb(241,243,217); text-decoration: none; }
 a:visited { color: rgb(241,243,217); }
