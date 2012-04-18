@@ -1,84 +1,34 @@
-<!doctype html>
-<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
-<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
-<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
-<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
-<!-- Consider adding an manifest.appcache: h5bp.com/d/Offline -->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
-<head>
-  <meta charset="utf-8">
-
-  <!-- Use the .htaccess and remove these lines to avoid edge case issues.
-       More info: h5bp.com/b/378 -->
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-
-  <title>Josh Mccarthy</title>
-  <meta name="description" content="Josh McCarthy">
-  <meta name="author" content="Josh McCarthy">
-
-  <!-- Mobile viewport optimized: j.mp/bplateviewport -->
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-
-  <!-- Place favicon.ico and apple-touch-icon.png in the root directory: mathiasbynens.be/notes/touch-icons -->
-  <!-- CSS: implied media=all -->
-  <!-- CSS concatenated and minified via ant build script-->
-  <link href='http://fonts.googleapis.com/css?family=Ubuntu+Mono' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="css/style.css">
-  <!-- end CSS-->
-
-  <!-- More ideas for your <head> here: h5bp.com/d/head-Tips -->
-
-  <!-- All JavaScript at the bottom, except for Modernizr / Respond.
-       Modernizr enables HTML5 elements & feature detects; Respond is a polyfill for min/max-width CSS3 Media Queries
-       For optimal performance, use a custom Modernizr build: www.modernizr.com/download/ -->
-  <script src="js/libs/modernizr-2.0.6.min.js"></script>
-</head>
-
-<body>
-  <div id="main">
-    <div id="content">
-      <div id="name" class="center">
-        <canvas id="canvas" width="460"></canvas>
+---
+layout: default
+title: Josh McCarthy
+---
+<div id="main">
+  <div id="content">
+    <div id="name" class="center">
+      <canvas id="canvas" width="460"></canvas>
+    </div>
+    <div id="data" class="hide zero">
+      <div id="links" class="center">
+          <span id="navAbout" class="nav-link selected">About</span>
+          <span id="navCode" class="nav-link">Code</span>
+          <span id="navConnect" class="nav-link">Connect</span>
       </div>
-      <div id="data" class="hide zero">
-        <div id="links" class="center">
-            <span id="navAbout" class="nav-link selected">About</span>
-            <span id="navCode" class="nav-link">Code</span>
-            <span id="navConnect" class="nav-link">Connect</span>
-        </div>
-        <div id="details" class="center round">
-            <div id="about" class="nav">
-                <p><span class="dull">//</span>I'm a <span class="hilight">Software Developer</span> in Ottawa<br />
-                  <span class="dull">//</span>I love <span class="hilight">Javascript</span> and web development<br />
-                  <span class="dull">//</span>Check out my code on github and connect with me
-                </p>
-            </div>
-            <div id="code" class="nav hide"><a href="http://github.com/joshuam">joshuam on <span class="hilight">GitHub</span></a><span class="dull">;</span></div>
-            <div id="connect" class="nav hide">
-                connect = <span class="dull">{</span><br />
-                  <span>twitter:</span> '<a class="hilight" href="https://twitter.com/mccarthyjm">mccarthyjm</a>',<br />
-                  <span>linkedIn:</span> '<a class="hilight" href="http://ca.linkedin.com/pub/josh-mccarthy/39/558/80a">Josh McCarthy</a>',<br />
-                  <span>email:</span> '<a class="hilight" href="mailto:mccarthy.josh@gmail.com">mccarthy.josh at gmail.com</a>'<br />
-                <span class="dull">};</span>
-            </div>
-        </div>
+      <div id="details" class="center round">
+          <div id="about" class="nav">
+              <p><span class="dull">//</span>I'm a <span class="hilight">Software Developer</span> in Ottawa<br />
+                <span class="dull">//</span>I love <span class="hilight">Javascript</span> and web development<br />
+                <span class="dull">//</span>Check out my code on github and connect with me
+              </p>
+          </div>
+          <div id="code" class="nav hide"><a href="http://github.com/joshuam">joshuam on <span class="hilight">GitHub</span></a><span class="dull">;</span></div>
+          <div id="connect" class="nav hide">
+              connect = <span class="dull">{</span><br />
+                <span>twitter:</span> '<a class="hilight" href="https://twitter.com/mccarthyjm">mccarthyjm</a>',<br />
+                <span>linkedIn:</span> '<a class="hilight" href="http://ca.linkedin.com/pub/josh-mccarthy/39/558/80a">Josh McCarthy</a>',<br />
+                <span>email:</span> '<a class="hilight" href="mailto:mccarthy.josh@gmail.com">mccarthy.josh at gmail.com</a>'<br />
+              <span class="dull">};</span>
+          </div>
       </div>
     </div>
   </div>
-    
-
-  <!-- JavaScript at the bottom for fast page loading -->
-
-  <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline -->
-  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-  <script>window.jQuery || document.write('<script src="js/libs/jquery-1.6.2.min.js"><\/script>')</script>
-  <script type="text/javascript" src="js/script.js"></script>
-  <!-- end scripts-->
-
-  <!--[if lt IE 7 ]>
-    <script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
-    <script>window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script>
-  <![endif]-->
-  
-</body>
-</html>
+</div>
