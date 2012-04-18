@@ -10,7 +10,7 @@ $(document).ready(function(){
         $('.nav').each(function(){
             $(this).addClass('hide');
         });
-        $('#links a').each(function(){
+        $('#links span').each(function(){
             $(this).removeClass('selected');
         });
     }
