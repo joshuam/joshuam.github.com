@@ -12,6 +12,9 @@ canvas:hover { cursor: pointer; }
 .hide { display: none; }
 .hilight { color: rgb(243,228,16); }
 .selected { color: rgb(249,49,62); }
+.zero { opacity: 0.0;
+-moz-opacity: 0.0;
+filter:alpha(opacity=0);}
 
 #main { height: 100%; overflow: none; }
 #connect { padding-top: 10px; }

@@ -88,6 +88,7 @@ $(document).ready(function(){
         typeWord(arr, {
             callback: function(){
             $('#data').removeClass('hide');
+            $('#data').fadeTo(1000, 1);
             },
             space: 35
         });
