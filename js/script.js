@@ -67,7 +67,7 @@ $(document).ready(function(){
 
         if (args.start < word.length)
         {
-            setTimeout(function(){typeWord(word, args)}, random(50, 200));
+            setTimeout(function(){typeWord(word, args);}, random(50, 200));
         }
         else
             args.callback();
@@ -87,7 +87,7 @@ $(document).ready(function(){
 
         typeWord(arr, {
             callback: function(){
-            $('#data').removeClass('hide')
+            $('#data').removeClass('hide');
             },
             space: 35
         });
@@ -101,5 +101,5 @@ $(document).ready(function(){
     toggle('#navAbout', '#about');
     toggle('#navCode', '#code');
     toggle('#navConnect', '#connect');
-    (function(){setTimeout(typeHeader, random(200, 500));})()
+    (function(){setTimeout(typeHeader, random(200, 500));})();
 });
