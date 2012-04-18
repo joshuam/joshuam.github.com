@@ -14,6 +14,7 @@ canvas:hover { cursor: pointer; }
 .hide { display: none; }
 .hilight { color: rgb(243,228,16); }
 .selected { color: rgb(249,49,62); }
+.dull { color: rgb(97,94,79); }
 .zero { opacity: 0.0;
 -moz-opacity: 0.0;
 filter:alpha(opacity=0);}
