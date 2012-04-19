@@ -1,10 +1,11 @@
 $(document).ready(function(){
 
-    var canvas = document.getElementById('canvas'),
-    ctx = canvas.getContext('2d');
-    ctx.fillStyle = 'rgba(38,91,243, 1.0)';
-    ctx.fillStyle = 'rgba(241,243,217, 1.0)';
-    ctx.font='80px Ubuntu Mono, monospace';
+    var args = {
+        top: 100,
+        textColor: 'rgba(241,243,217, 1.0)',
+        callback: headerFinished
+        },
+    tw = new TypeWriter('canvas', args);
 
     function hide()
     {
@@ -25,83 +26,24 @@ $(document).ready(function(){
         });
     }
 
-    function random(min, max, round)
-    {
-        var x = Math.random() * (max-min) + min;
-        if (round)
-        {
-          x = Math.floor(x);
-        }
-        return x;
-    }
-
-    function typeWord(word, options)
-    {
-        var fillStyle,
-            option,
-            args = {
-            start: 0,
-            left: 0,
-            top: 100,
-            space: 30,
-            shadow: true,
-            shadowX: 2,
-            shadowY: 2,
-            callback: function(){}
-            };
-
-        for (option in args)
-        {
-            args[option] = typeof options[option] === 'undefined' ? args[option] : options[option];
-        }
-
-        if (args.shadow)
-        {
-            fillStyle = ctx.fillStyle;
-            ctx.fillStyle = 'rgba(0,0,0,1.0)';
-            ctx.fillText(word[args.start], args.left + args.shadowX, args.top + args.shadowY);
-            ctx.fillStyle = fillStyle;
-        }
-        ctx.fillText(word[args.start], args.left, args.top);
-        args.start++;
-        args.left += args.space;
-
-        if (args.start < word.length)
-        {
-            setTimeout(function(){typeWord(word, args);}, random(50, 200));
-        }
-        else
-            args.callback();
-    }
-
     function typeHeader()
     {
-        var arr = [],
-        word = "Josh McCarthy",
-        i = 0,
-        length;
+        tw.type("Josh McCarthy");
+    }
 
-        for (i, length = word.length; i < length; i++)
-        {
-            arr.push(word.charAt(i));
-        }
-
-        typeWord(arr, {
-            callback: function(){
-            $('#data').removeClass('hide');
-            $('#data').fadeTo(1000, 1);
-            },
-            space: 35
-        });
+    function headerFinished()
+    {
+        $('#data').removeClass('hide');
+        $('#data').fadeTo(1000, 1);
     }
 
     $('#canvas').on('click', function(){
-        ctx.clearRect(0, 0, ctx.canvas.width, ctx.canvas.height);
-        setTimeout(typeHeader, random(100, 300));
+        tw.clear();
+        setTimeout(typeHeader, 150);
     });
 
     toggle('#navAbout', '#about');
     toggle('#navCode', '#code');
     toggle('#navConnect', '#connect');
-    setTimeout(typeHeader, random(200, 500));
+    setTimeout(typeHeader, 500);
 });
