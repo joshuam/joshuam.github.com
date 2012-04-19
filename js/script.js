@@ -103,5 +103,5 @@ $(document).ready(function(){
     toggle('#navAbout', '#about');
     toggle('#navCode', '#code');
     toggle('#navConnect', '#connect');
-    (function(){setTimeout(typeHeader, random(200, 500));})();
+    setTimeout(typeHeader, random(200, 500));
 });
