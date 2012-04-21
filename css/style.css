@@ -13,6 +13,9 @@ canvas:hover { cursor: pointer; }
 .round { -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; }
 .hide { display: none; }
 .hilight { color: rgb(243,228,16); }
+#connect a { color: rgb(243,228,16); }
+#connect a:visited { color: rgb(243,228,16); }
+#connect a:hover { color: rgb(249,49,62); }
 .selected { color: rgb(249,49,62); }
 .dull { color: rgb(97,94,79); }
 .zero { opacity: 0.0;
