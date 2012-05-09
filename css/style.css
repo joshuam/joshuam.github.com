@@ -23,7 +23,7 @@ filter:alpha(opacity=0);}
 
 #main { height: 100%; overflow: none; }
 #connect { padding-top: 10px; }
-#name { width: 525px; position: relative; top: 35px; left: 460px; font-size: 80px; font-weight: 400; }
+#name { width: 525px; height: 38px;  position: relative; top: 35px; left: 460px; font-size: 80px; font-weight: 400; }
 #name span { padding: 0 0 10px 0; border-bottom: 1px solid #2cab2c; }
 #links { width: 425px; text-align: center; position: relative; top: 35px; }
 #links a { padding: 0 10px 0 10px; }
