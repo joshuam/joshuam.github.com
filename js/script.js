@@ -1,11 +1,6 @@
 $(document).ready(function(){
 
-    var args = {
-        top: 100,
-        textColor: 'rgba(241,243,217, 1.0)',
-        callback: headerFinished
-        },
-    tw = new TypeWriter('canvas', args);
+    tw = new TypeWriter('name');
 
     function hide()
     {
@@ -28,7 +23,7 @@ $(document).ready(function(){
 
     function typeHeader()
     {
-        tw.type("Josh McCarthy");
+        tw.type("Josh McCarthy", headerFinished);
     }
 
     function headerFinished()
@@ -37,8 +32,8 @@ $(document).ready(function(){
         $('#data').fadeTo(1000, 1);
     }
 
-    $('#canvas').on('click', function(){
-        tw.clear();
+    $('#name').on('click', function(){
+        $('#name').html('');
         setTimeout(typeHeader, 150);
     });
 

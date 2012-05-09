@@ -6,7 +6,6 @@ a:visited { color: rgb(241,243,217); }
 a:hover { color: rgb(249,49,62); text-decoration: none; }
 a:focus { outline: thin dotted; }
 a:hover, a:active { outline: 0; }
-canvas:hover { cursor: pointer; }
 
 .nav-link:hover { cursor: pointer; color: rgb(249,49,62); }
 .center { margin: 0 auto; text-align: center; }
@@ -24,7 +23,7 @@ filter:alpha(opacity=0);}
 
 #main { height: 100%; overflow: none; }
 #connect { padding-top: 10px; }
-#name { width: 425px; text-align: center; position: relative; font-size: 60px; font-weight: 400; }
+#name { width: 525px; position: relative; top: 35px; left: 460px; font-size: 80px; font-weight: 400; }
 #name span { padding: 0 0 10px 0; border-bottom: 1px solid #2cab2c; }
 #links { width: 425px; text-align: center; position: relative; top: 35px; }
 #links a { padding: 0 10px 0 10px; }
