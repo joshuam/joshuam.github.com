@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-    tw = new TypeWriter('name');
+    var tw = new TypeWriter('name');
 
     function hide()
     {
